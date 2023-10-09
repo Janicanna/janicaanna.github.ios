@@ -1,0 +1,13 @@
+h1{
+    color:purple;
+    background-color:#7fffd4;
+    text-align: center;
+    border: 1px solid green;
+    }
+    h2{
+    color:blue;
+    font-family: consolas;
+    background-color:#f4bbff;
+    }
+    .fancy{font-family:consolas;}
+    .jee{color:blue;}
