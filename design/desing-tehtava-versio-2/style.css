@@ -16,7 +16,7 @@ html {
 	/*koko sivun tausta on valkoinen.
 	Muuta haluamaksesi*/
 	background: mediumpurple; 
-	font-family: 'Kenia', sans-serif;
+	font-family: 'Kanit', sans-serif;
 	color:#B3B2AE;
 
 	/*Jos määrität html-tagissa fontteja, 
@@ -39,7 +39,7 @@ body {
 	/*Tällä koodilla voit tehdä niin, että yli 900px
 	leveässä näytössä body-tagi jää vain 900px leveäksi,
 	ja reunoille jää tyhjää. Voit muuttaa tätä miten haluat.*/
-	max-width: 900px;
+	max-width: 1106px;
 	margin: auto; /*tämä keskittää body-tagin sivusuunnassa*/
 	padding: 17px;
 	background: #3E2B6D;
@@ -59,11 +59,11 @@ header h1 {
 
 	/*Voit halutessasi myös esim. keskittää otsikon (text-align: center;)*/
 
-	font-size: 50px;
+	font-size: 55px;
 	font-family: 'Kanit', sans-serif;
 	color: #F48B5E;
 	text-shadow: 2px 2px white;
-	margin-left: 20px;
+	margin-left: 60px;
 
 
 }
@@ -76,7 +76,7 @@ header h1 {
 	display: flex; 
 	flex-wrap:wrap; 
 	justify-content: space-around;
-	margin-top: 70px;
+	margin-top: 50px;
 
 }
 	
@@ -95,12 +95,12 @@ header h1 {
 	niin näyttää tyylikkäämmältä */
 
 	/*Voi muokata täällä myös background-, color-arvoja.*/
-	padding: auto;
+	padding: 5px;
 }
 .fontit{
 	font-size: 20px;
 	margin-right: 3px;
-	margin-top: 60px;
+	margin-top: 20px;
 }
 
 /*Link in menu item*/
@@ -108,6 +108,7 @@ header h1 {
 
 	text-decoration: none; /*poistaa linkin alleviivauksen*/
 	color: #B3B2AE ;
+	font-size: 17px;
 
 	/*Voi muokata täällä myös background-, color- 
 	font-size- ja font-family-arvoja.*/
@@ -149,9 +150,9 @@ header h1 {
 	font-size: 15px;
 	display: block;
 	width: 50px;
-  	margin: 50px;
+  	margin: auto;
 	text-shadow: 2px 2px rgb(115, 94, 206);
-	padding:40px;
+	padding:10px;
 	
 
 }
@@ -168,7 +169,9 @@ header h1 {
   transition: transform 0.3s ease-in-out; /* Animaationopeus ja tyyli */
   transform-origin: center center; /* Kiertopisteen keskelle */
   animation: spin 2s linear infinite; /* Pyöritysanimointi */
-  font-family:fantasy;
+  font-family: 'Fira Sans', sans-serif;
+  padding:30px;
+  transition: 1s padding;
 }
 
 @keyframes spin {
@@ -196,7 +199,7 @@ main {
 	jolloin artikkelit asettuvat vierekkäin.*/
 	
 	display: flex; flex-wrap:wrap; justify-content: center;
-	padding-top: 30px;
+	padding-top: 45px;
 }
 
 /*Frame of each "article"*/
@@ -212,7 +215,7 @@ article {
 	niin näyttää tyylikkäämmältä! Teksti, kuva ym. ei saa olla 
 	reunaan asti, vaan reunassa pitää olla marginaali (teknisesti
 	margin tai padding).*/
-	margin: auto;
+	padding: 30px;
 }
 
 
@@ -222,7 +225,7 @@ article h2 {
 	display:inline-flexbox
 	vertical-align: top;
 	color: #F48B5E;
-	.fancy{color:#B3B2AE;}
+	.fancy{color:#F48B5E}
 	text-align: center;
 	padding:10px;
 
@@ -247,7 +250,7 @@ article p {
 	/*Saatat haluta muokata täällä 
 	background-, color-, margin- ja padding-
 	font-size- ja font-family-arvoja.*/
-	.jee{color:#F48B5E;}
+	.jee{color: #B3B2AE;}
 }
 
 
@@ -288,5 +291,6 @@ footer {
 .loppu{
 	color:indigo;
 	font-size: large;
+
 }
 
