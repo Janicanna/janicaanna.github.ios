@@ -1,0 +1,108 @@
+
+
+
+div.absolute{
+    position:relative;
+    border: 3px solid #73AD21;
+    margin-top: 45px;
+    margin-bottom: 27px;
+}
+
+div.isotboxit{
+    position:relative;
+    
+}
+
+.navbar-brand {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    font-size: 50px;
+}
+
+
+[class*='col'] {
+    padding: 1rem;
+    background-color: rgb(84, 131, 43);
+    border: 2px solid white;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px; /* Lisätty tilaa kolumnien väliin */
+}
+
+h1 {
+    color: rgba(251, 165, 165, 0.856);
+}
+
+.btn {
+    color: rgb(200, 132, 132);
+    border-color: black;
+}
+
+.navbar-expand-md {
+    margin-left: -120px;
+}
+
+div.absolute {
+    position: relative;
+    border: 3px solid #73AD21;
+    margin-top: 45px;
+    margin-bottom: 27px;
+}
+
+div.isotboxit {
+    position: relative;
+}
+
+.card {
+    background-color: rosybrown;
+}
+
+.card-title {
+    color: green;
+}
+
+.btn-primary {
+    background-color: babyblue;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color:lightskyblue;
+}
+
+.btn-primary {
+    background-color: forestgreen; 
+    color: white;
+}
+.btn-primary:hover {
+    background-color: darkgreen;
+}
+
+.nav-item .disabled {
+    color: black; 
+}
+
+.footerr {
+    color: rgb(7, 240, 38);
+}
+
+
+.carousel-inner img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.carousel {
+    background: #94e445; /* vihreä taustaväri */
+}
+
+.carousel-control-prev, .carousel-control-next {
+    filter:contrast() /* Vaihda nuolien väriä */
+}
+
+.page-border {
+    border: 15px solid #224728; /* Tumman havumetsän vihreä reunaväri */
+    overflow: hidden;
+}
