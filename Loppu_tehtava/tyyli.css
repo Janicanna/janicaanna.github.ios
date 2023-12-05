@@ -1,0 +1,250 @@
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin: 0;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+body, header {
+    margin: 0;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+    background-color: #333;
+    padding: 63px;
+    text-align: start;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('R.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+header h1 {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 60px;
+    color: transparent; 
+    display: inline-block;
+    background-image: linear-gradient(to right, #ff0000, #ff9900, #ffff00, #00ff00, #0000ff, #ff00ff); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin-left: -23px;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 65px;
+    left: 46px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+header img:hover {
+    transform: scale(1.2);
+}
+
+main {
+    flex-grow: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+#spacer {
+    height: 40px;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+    margin: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+input {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+button {
+    background-color: #ff9900;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    cursor: grabbing;
+}
+
+button:hover {
+    background-color: #800080; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    display: inline;
+    margin-right: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ff9900;
+    font-weight: bold;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 25px;
+}
+
+h2 {
+    color: #ff9900;
+    font-family: 'Arvo', serif;
+    font-size: 27px;
+    padding-bottom: 29px;
+}
+
+p {
+    font-family: 'Arvo', serif;
+}
+
+article{
+    padding-top: 45px;
+    padding-bottom: 4px;
+}
+
+figure{
+    padding-bottom: 45px;
+}
+
+#uudettekniikat{
+    padding-top:25px;
+}
+
+.tekniikat-lista {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tekniikat-lista li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tekniikat-lista img {
+    width: 40px; 
+    height: 40px; 
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+#uutiset a {
+    color: #ff9900;
+}
+
+#uutiset a:hover {
+    color: #800080;
+}
+
+footer {
+    background-color: #333;
+    padding: -2px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+#Artikkeli {
+    gap: 20px;
+}
+
+#pelit {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+#arvostelut {
+    display: flex;
+    gap: 90px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.peli-arvostelu {
+    text-align: center;
+}
+
+.peli-arvostelu img {
+    width: 406px;
+    height: 315px; 
+    border-radius: 50px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+    margin-top: 15;
+}
+
+@media (max-width: 768px) {
+    #pelit {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+@media (min-width: 768px) {
+    ul {
+        justify-content: flex-end; 
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    form {
+        margin-top: 10px;
+    }
+}
+
+#uudettekniikat {
+    padding-top: 25px;
+    flex: 1; /* Jotta uudet tekniikat osio kasvaa tarvittaessa */
+}
+
