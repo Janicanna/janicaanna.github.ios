@@ -13,52 +13,39 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" type='text/css' />
 </head>
+
 <body>
-<div class="container-fluid">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <h1 class="navbar-brand text-center neon-title">Pelit</h1>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="index.html">Etusivu</a></li>
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="bootstrap.html">Pelit</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#yhteystiedotModal">Yhteystiedot</a>
-          </li>
-        </ul>
-      </div>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+        <h1 class="navbar-brand text-center neon-title mx-auto">Pelit</h1>
       <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-        <!-- Sovelluslaatikon nappi -->
+        <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
       </button>
     </div>
   </nav>
 
-  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Sovellus</h5>
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <ul>
-        <li class="nav-item"><a class="nav-link" href="#!">Etusivu</a></li>
-        <p></p>
-        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Pelit</a></li>
-        <p></p>
-        <li class="nav-item"><a class="nav-link" href="#!">God of war</a></li>
-        <p></p>
-        <li class="nav-item"><a class="nav-link" href="#!">Horizon zero dawn</a></li>
-        <p></p>
-        <li class="nav-item"><a class="nav-link" href="#!">The last of us II</a></li>
-        <p></p>
-        <li class="nav-item"><a class="nav-link" href="#!">Ghost of Tsushima</a></li>
-      </ul>
-    </div>
-  </div>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Valikko</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body glowing-background">
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Etusivu</a></li>
+                    <p></p>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="bootstrap.html">Pelit</a></li>
+                    <p></p>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#yhteystiedotModal">Yhteystiedot</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
   <main class="container mt-4">
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -89,8 +76,8 @@
          <article>
             <div class="row">  
               <div class="col-md-3">        
-                <h2>God of war Ragnarök </h2> 
-                  <h3>Peli kertoo sodan jumalasta Kratoksesta ja hänen poikansa Atreuksen matkasta välttää Ragnarök.</h3>     
+                <h2>God of war</h2> 
+                  <h3>Peli kertoo sodan jumalasta Kratoksesta ja hänen poikansa Atreuksen matkasta suurimmalle vuorelle tiputtamaan Kratoksen vaimon ja Atreuksen äidin tuhkat.</h3>     
               </div>     
               <div class="col-md-3"> 
                 <h2>Horizon zero dawn</h2>   
@@ -127,7 +114,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=d2cp2gwRYzw" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://youtu.be/blmrHUPqjVE" frameborder="0" allowfullscreen></iframe>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sulje</button>
@@ -141,7 +128,7 @@
           <div class="row">
             <div class="col-md-4">
               <h2>Putki</h2>
-             <p class= teksti>Jotkin pelit eivät mahdollista vapaata liikkumista pelimaailmassa. Tämän tyyppisiä pelejä voidaan kutsua putkinäkö peleiksi. Tämä siitä syystä, että peli etenee, kun menee vain tiettyyn 'ohjattuun' suuntaan.</p>
+             <p class= teksti>Jotkin pelit eivät mahdollista vapaata liikkumista pelimaailmassa. Tämän tyyppisiä pelejä voidaan kutsua putkinäkö peleiksi. Tällöin pelaajan pitää liikkua, kuin putkessa eli eteenpäin, jotta peli etenee. Tällainen peli on esimerksiksi kuvassa oleva The last guardian peli.</p>
             </div>
             <div class="col-md-8">
               <figure>
@@ -150,9 +137,37 @@
             </div>
           </div>
         </article>
+        <article> 
+          <div class='isotboxit'>
+            <div class="container-md">   
+              <div class="row">
+                <div class="col-md-6">       
+                  <h2>Hyödyt</h2>
+                    <h3>Videopelien pelaamisesta on huomattu hyötyjä. Moni saa kaverisuhteita videopelien kautta. Englannikielen taito karttuu. Myös Aalto-yliopisto on lähtenyt kehittämään peliä, joka voisi auttaa nuoria mielenterveyden haasteiden parissa.</h3>
+                </div>     
+                <div class="col-md-6">        
+                  <h2>Haitat</h2>
+                    <h3>Pelaamisella on myös haitta puolensa. Tämä voi vähentää liikkumista. Naamatusten käytävä sosiaalisuus saattaa niukentua. Sekä huonossa asennossa pelaaminen voi vaikuttaa ryhtiin.</h3>
+                </div>   
+              </div> 
+            </div>
+          </div>
+        </article>
+        <figure>
+          <div class="container-md">
+            <div class="row d-flex align-items-center">
+              <div class="col-md-6">
+                <img src="oOIP.jfif" alt="The last guardian" class="img-fluid w-100" style="object-fit: cover; height: 300px;">
+              </div>
+              <div class="col-md-6">
+                <img src="OIPp.jfif" alt="The last guardian" class="img-fluid w-100" style="object-fit: cover; height: 300px;">
+              </div>
+            </div>
+          </div>
+        </figure>
         <aside>
           <div class="d-grid gap-2 col-">
-            <button type="button" class="btn btn-primary btn-dark btn-lg">Bootsrap</button>
+            <button type="button" class="btn btn-primary btn-dark btn-lg">Tähän linkitetään CSS tiedosto. Kysy opettajalta miten? ja onko sivu ns. perus bootstrap sivusto?</button>
           </div>
         </aside>
   </main>
@@ -163,7 +178,6 @@
     </div>
   </footer>
 </div>
-
 <div class="modal fade" id="yhteystiedotModal" tabindex="-1" aria-labelledby="yhteystiedotModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -174,28 +188,15 @@
       <div class="modal-body">
         <p>Tekijä: Janica Helaskoski</p>
         <p>Puh: 1234567654</p>
-        <p>Voit myös laittaa meille suoraan viestiä alla olevan viestiboxin kautta. Muistathan lopuksi painaa lähetä nappia, jotta viesti varmasti lähtee.</p>
-        <textarea id="yhteystietoTextarea" class="form-control" rows="4" placeholder="Kirjoita tähän..."></textarea>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" onclick="lahetaYhteystiedot()">Lähetä</button>
+        <p>Sähköposti: sähköposti@sahkoposti.fi</p>
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sulje</button>
       </div>
     </div>
   </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-<script>
-  function lahetaYhteystiedot() {
-    const teksti = document.getElementById("yhteystietoTextarea").value;
-    document.getElementById("yhteystietoTextarea").value = "";
-    const modal = new bootstrap.Modal(document.getElementById('yhteystiedotModal'));
-    modal.hide();
-  }
 </script>
 </body>
 </html>
