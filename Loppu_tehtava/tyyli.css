@@ -5,7 +5,7 @@ html, body {
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #1a1a1a;
+    background-color: #000332;;
     color: #fff;
     margin: 0 auto;
     padding-bottom: 50px;
@@ -26,15 +26,10 @@ aside {
     flex: 0 1 calc(25% - 20px);
     padding: 20px;
     margin: 10px;
-    background-color: #333;
+    background-color: #0b1442f0;
     color: #fff;
     text-align: center;
     box-sizing: border-box;
-}
-
-
-.console-box {
-    flex: 0 1 calc(25% - 20px);
 }
 
 
@@ -60,11 +55,12 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('R.gif');
+    background-image: url('200.gif');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     z-index: -1;
+    opacity: 0.6;
 }
 
 header h1 {
@@ -75,7 +71,7 @@ header h1 {
     background-image: linear-gradient(to right, #ff0000, #ff9900, #ffff00, #00ff00, #0000ff, #ff00ff);
     background-clip: text;
     -webkit-background-clip: text;
-    margin-left: -23px;
+    margin-left: 102px;
 }
 
 header img {
@@ -83,7 +79,7 @@ header img {
     height: auto;
     position: absolute;
     top: 65px;
-    left: 46px;
+    left: 171px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -109,7 +105,7 @@ main::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('istockphoto-908353078-612x612.jpg');
+    background-image: url('ai-generated-7836741_1280.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -122,13 +118,14 @@ main::after {
 }
 
 nav {
-    background-color: #444;
+    background-color: #0b3056;
     padding: 10px;
     margin: 12px auto;
     display: flex;
     align-items: center;
     justify-content: space-between; 
     flex-wrap: wrap;
+    box-shadow: 0 0 10px #0B3047, 0 0 20px #0B3057, 0 0 30px #0b3056;
 }
 
 form {
@@ -144,7 +141,7 @@ input {
 }
 
 button {
-    background-color: #ff9900;
+    background-color: #00efff;
     color: black;
     border: none;
     padding: 5px 10px;
@@ -152,7 +149,7 @@ button {
 }
 
 button:hover {
-    background-color: #681668;
+    background-color: #c92dc9;
 }
 
 nav ul {
@@ -171,14 +168,14 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #ff9900;
+    color:#00f9ff;
     font-weight: bold;
     font-family: 'Pixelify Sans', sans-serif;
     font-size: 25px;
 }
 
 h2 {
-    color:#ff9900;
+    color:#00efff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     font-family: 'Arvo', serif;
     font-size: 25px;
@@ -187,8 +184,8 @@ h2 {
 
 p {
     font-family: 'Arvo', serif;
-    text-shadow: 2px 2px 1px rgba(0, 0, 0, 1.0);
-    color: #13d4ff;
+    text-shadow: 2px 2px 1px rgb(91, 100, 5);
+    color: #d9f72e;
     font-size: 19px;
 }
 
@@ -203,8 +200,9 @@ figure {
 }
 
 #uudettekniikat {
-    padding-top: 25px;
+    padding-top: 40px;
     flex: 1;
+    background-color: #4c57b269;
 }
 
 .tekniikat-lista {
@@ -256,8 +254,7 @@ footer {
     flex: 1 1 calc(48% - 20px);
     padding: 20px;
     margin: 10px;
-    background-color:#a85e12a8;
-    color: #fff;
+    background-color: #4c57b269;
     text-align: center;
     box-sizing: border-box;
     animation: gameAnimation 1s ease-out;
@@ -283,6 +280,8 @@ footer {
 
 .peli-arvostelu {
     text-align: center;
+    background-color: #305b3085;
+        border-radius: 102px;
 }
 
 .peli-arvostelu img {
@@ -332,12 +331,18 @@ footer {
 }
 
 div#uutiset {
-    background: #a85e12a8;
+    background-color:#4c57b269;
     text-align: -webkit-center;
 }
 
 ul{
     list-style-type: none;
     padding-top: 23px;
+    margin-bottom: 77px;
 }
+
+a{
+    color:#13d4ff;
+}
+
 

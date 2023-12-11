@@ -34,6 +34,7 @@ body {
 
 p {
   font-family: 'Love Ya Like A Sister', cursive;
+  font-size: 40px;
 }
 
 h1 {
@@ -167,9 +168,10 @@ footer {
 
 .row{
   --bs-gutter-x: 3.8rem;
-  margin-top: 92px;
+  padding:34px;
   margin-right: 10px;
   margin-left: 10px;
+  padding-top: 80px;
 }
 
 .teksti{
@@ -180,4 +182,29 @@ footer {
 
 .isotboxit{
   background: #0d6efdb0;
+}
+
+@media (max-width: 767px) {
+  .isotboxit h2, .isotboxit h3,
+    font-size: 18px; 
+  }
+
+  .isotboxit .container-md {
+    padding: 10px; 
+  }
+
+  aside {
+    position: relative;
+}
+
+.btn-primary p {
+    transition: transform 0.3s ease-in-out;
+}
+
+aside:hover .btn-primary p {
+    transform: scale(1.2);
+}
+
+article {
+  padding-top: 60px;
 }
